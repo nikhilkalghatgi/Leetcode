@@ -1,5 +1,4 @@
 ![alt text](../images/rain_water.png)
-
 ```cpp
 class Solution {
 public:
