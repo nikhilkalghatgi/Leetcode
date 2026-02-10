@@ -1,8 +1,9 @@
 
 ## START ALL VECTORS FROM LAST, CUZ:
-## 1. increasing order, ie, max will be at the last
-## 2. last n elements in nums1 will be 0
+# 1. increasing order, ie, max will be at the last
+# 2. last n elements in nums1 will be 0
 
+```cpp
 void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
     int i = m - 1;        // last valid element in nums1
     int j = n - 1;        // last element in nums2
