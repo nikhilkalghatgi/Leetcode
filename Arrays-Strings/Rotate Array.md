@@ -17,6 +17,17 @@ public:
     }
 };
 ```
+
+manually write reverse:
+```cpp
+void reverseArray(vector<int>& nums, int start, int end) {
+    while (start < end) {
+        swap(nums[start], nums[end]);
+        start++;
+        end--;
+    }
+}
+```
 🧠 Why This Works (Very Important)
 
 Example:
