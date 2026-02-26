@@ -38,3 +38,22 @@ void rotate180(vector<vector<int>> &matrix){
     }
 }
 ```
+Manual Swap
+```cpp
+void mySwap(int &a, int &b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    void myReverse(vector<int> &row) {
+        int left = 0;
+        int right = row.size() - 1;
+
+        while (left < right) {
+            mySwap(row[left], row[right]);
+            left++;
+            right--;
+        }
+    }
+```
