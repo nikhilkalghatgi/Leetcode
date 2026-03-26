@@ -13,20 +13,16 @@ public:
         while (left < right) {
 
     if (height[left] < height[right]) {
-
         leftmax = max(leftmax, height[left]);
-
         water += leftmax - height[left];
         left++;
 
     } else {
         rightmax = max(rightmax, height[right]);
-
         water += rightmax - height[right];
         right--;
     }
 }
-
         return water;
     }
 };
