@@ -9,13 +9,14 @@ A leaf is a node with no children.
 class Solution {
 public:
     bool hasPathSum(TreeNode* root, int targetSum) {
-        if(!root) return false;
-        
-        if(root->left==nullptr || root->right == nullptr){
-            return targetSum - root->val;
+        if (!root) return false;
+
+        if (root->left == nullptr && root->right == nullptr) {
+            return targetSum == root->val;
         }
+
         int rem = targetSum - root->val;
-        return hasPathSum(root->left, rem) || hasPathSum(root->right, rem)
+        return hasPathSum(root->left, rem) || hasPathSum(root->right, rem);
     }
 };
 ```
