@@ -5,6 +5,7 @@ The path sum of a path is the sum of the node's values in the path.
 
 Given the root of a binary tree, return the maximum path sum of any non-empty path.
 
+![alt text](../images/binarytree_max_path_sum.png)
 ```cpp
 class Solution {
 public:
