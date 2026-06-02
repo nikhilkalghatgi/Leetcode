@@ -19,8 +19,8 @@ public:
             long long temp = dvs;
             int multiple = 1;
             while(dvd>=(temp<<1)){
-                temp<=1;
-                multiple<=1;
+                temp<<=1;
+                multiple<<=1;
             }
             quotient+=multiple;
             dvd-=temp;
